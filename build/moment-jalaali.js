@@ -417,7 +417,7 @@ require.register("moment-jalaali", function (exports, module) {
 
 module.exports = jMoment
 
-var moment = require('moment/moment')
+var moment = require('moment')
   , jalaali = require('jalaali-js')
 
 /************************************
@@ -614,35 +614,35 @@ function getPrototypeOf(object) {
     Languages
 ************************************/
 extend(getPrototypeOf(moment.localeData()),
-  { _jMonths: [ 'Farvardin'
-              , 'Ordibehesht'
-              , 'Khordaad'
-              , 'Tir'
-              , 'Amordaad'
-              , 'Shahrivar'
-              , 'Mehr'
-              , 'Aabaan'
-              , 'Aazar'
-              , 'Dey'
-              , 'Bahman'
-              , 'Esfand'
+  { _jMonths: [ 'فروردین'
+              , 'اردیبهشت'
+              , 'خرداد'
+              , 'تیر'
+              , 'مرداد'
+              , 'شهریور'
+              , 'مهر'
+              , 'آبان'
+              , 'آذر'
+              , 'دی'
+              , 'بهمن'
+              , 'اسفند'
               ]
   , jMonths: function (m) {
       return this._jMonths[m.jMonth()]
     }
 
-  , _jMonthsShort:  [ 'Far'
-                    , 'Ord'
-                    , 'Kho'
-                    , 'Tir'
-                    , 'Amo'
-                    , 'Sha'
-                    , 'Meh'
-                    , 'Aab'
-                    , 'Aaz'
-                    , 'Dey'
-                    , 'Bah'
-                    , 'Esf'
+  , _jMonthsShort:  [ 'فروردین'
+                    , 'اردیبهشت'
+                    , 'خرداد'
+                    , 'تیر'
+                    , 'مرداد'
+                    , 'شهریور'
+                    , 'مهر'
+                    , 'آبان'
+                    , 'آذر'
+                    , 'دی'
+                    , 'بهمن'
+                    , 'اسفند'
                     ]
   , jMonthsShort: function (m) {
       return this._jMonthsShort[m.jMonth()]
